@@ -17,7 +17,7 @@ header label {
     height: 30px;
     padding: 10px;
     border-right: 1px solid white;
-    background-color: blueviolet;
+    background-color: rgba(53, 84, 223, 0.98);
 }
 
 header label:hover {
