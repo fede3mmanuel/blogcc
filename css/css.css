@@ -1,3 +1,48 @@
 .image-btn-menu {
-    width: 20px;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    background: rgba(53, 84, 223, 0.404);
+}
+
+#btn-menu {
+    display: none;
+}
+
+header label {
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid white;
+    background-color: blueviolet;
+}
+
+header label:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.menu ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu li {
+    text-align: center;
+    flex-grow: 1;
+    border-right: 1px solid white;
+}
+
+.menu li:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
 }
