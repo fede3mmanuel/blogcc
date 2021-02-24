@@ -3,6 +3,11 @@ layout: default
 title: Sitio web de los creadores de contenido
 ---
 
+{% assign min = 0 %}
+{% assign max = 1000 %}
+{% assign diff = max | minus: min %}
+{% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
+
 <h1 class="test" id="secondtest" data-id="123123"><center>El sitio web de los creadores de contenido</center></h1>
 
 <p>test</p>

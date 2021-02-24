@@ -8,12 +8,22 @@
     </head>
     <body>
         <script>
-            window.addEventListener('load', function(){
-                var p = document.getElementsByClassName('test');
-                console.log(p);
-                console.log(p[0])
-            })
-        </script>
+            var p = document.getElementsByClassName('test');
+            console.log(p);
+            console.log(document.readyState);
+            document.addEventListener("DOMContentLoaded", function() {
+                console.log(document.readyState);
+            });
+        //     window.onload = function(){
+        //         console.log("test");
+        //         alert("test");
+        //     };
+        //     window.addEventListener('load', function(){
+        //         var p = document.getElementsByClassName('test');
+        //         console.log(p);
+        //         console.log(p.id)
+        //     })
+        // </script>
         <header>
             <input type="checkbox" id="btn-menu">
             <label for="btn-menu"><img src="{{site.baseurl}}/images/icons/icon.png" alt="" class="image-btn-menu"></label>
